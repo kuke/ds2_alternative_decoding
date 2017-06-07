@@ -1,8 +1,9 @@
 # ds2_alternative_decoding
 
-Alternative way to CTC decode: don't use external scoring function during beam search, instead using the external score in reranking.
+Alternative way of CTC decoding: don't use external scoring function during beam search, instead using the external score in reranking.
 
 **How to Run**
+
 Replace the same files in [Deep Speech 2 Project](https://github.com/PaddlePaddle/models/tree/develop/deep_speech_2) with these two files,   
 then run like 
 ```
