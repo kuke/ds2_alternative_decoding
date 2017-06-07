@@ -1,11 +1,16 @@
 # ds2_alternative_decoding
 
-Run 
+Alternative way to CTC decode: don't use external scoring function during beam search, instead using the external score in reranking.
+
+**How to Run**
+Replace the same files in [Deep Speech 2 Project](https://github.com/PaddlePaddle/models/tree/develop/deep_speech_2) with these two files,   
+then run like 
 ```
 python infer.py --use_gpu=False --alpha=1 --beta=1 --num_results_per_sample=5
 ```
 
-Output example
+**Output example**
+
 ```
 Target Transcription:	yet these thoughts affected hester prynne less with hope than apprehension
 -61.860616 -14.303021 -57.557594  10.000000 :	yet these thoughtsoftected hester prin less with hope than aprehenchen
